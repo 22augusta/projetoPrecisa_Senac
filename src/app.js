@@ -1,10 +1,13 @@
-const bodyParser = require("body-parser");
 const express = require("express")
+const bodyParser = require("body-parser");
 const mongoose = require("mongoose")
+
 const app = express()
 
-
-mongoose.connect("mongodb://localhost:27017/senac",  { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost:27017/senac", {
+                 useNewUrlParser: true,
+                 useUnifiedTopology: true
+});
 
 let db = mongoose.connection;
 
