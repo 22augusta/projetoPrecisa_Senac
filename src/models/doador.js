@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const instituicaoSchema = new mongoose.Schema({
+const doadorSchema = new mongoose.Schema({
         Id: {type: Number},
         Nome: {type: String},
         CpfCnpj: {type: Number},
@@ -10,9 +10,9 @@ const instituicaoSchema = new mongoose.Schema({
     versionKey:false
 });
 
-const instituicao = mongoose.model('instituicao', instituicaoSchema);
+const doador = mongoose.model('doador', doadorSchema);
 
-module.exports = instituicao;
+module.exports = doador;
     
 
     
