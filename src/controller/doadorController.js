@@ -1,4 +1,4 @@
-const instituicao = require("../models/doador")
+const doador = require("../models/doador")
 
 
 const getAllDoador = (req, res) => {
