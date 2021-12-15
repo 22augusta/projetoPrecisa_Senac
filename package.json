@@ -2,7 +2,7 @@
   "name": "projetoprecisa_senac",
   "version": "1.0.0",
   "description": "Projeto Final Senac",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
