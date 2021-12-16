@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const controller = require("../controllers/doadorController")
+const controller = require("../controller/doadorController")
 
 router.get("/", controller.getAllDoador)
 router.get("/:id", controller.getDoador)
