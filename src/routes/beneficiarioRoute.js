@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const controller = require("../controllers/beneficiarioController")
+const controller = require("../controller/beneficiarioController")
 
 router.post("/", controller.createBeneficiario)
 router.delete("/:id", controller.deleteBeneficiario)
