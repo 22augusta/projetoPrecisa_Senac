@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const controller = require("../controllers/instituicaoController")
+const controller = require("../controller/instituicaoController")
 
 router.get("/", controller.getAllInstituicao)
 router.get("/:id", controller.getInstituicaoId)
