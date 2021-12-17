@@ -1,7 +1,7 @@
-const beneficiario = require("../models/beneficiario")
+const beneficiario = require("../models/beneficiario.js")
 
 
-const createBeneficiario = (req, res) => {
+const postBeneficiario = (req, res) => {
     console.log(req.body);
 
     let beneficiario = new beneficiario(req.body)
@@ -40,7 +40,7 @@ const deleteBeneficiario= (req, res) => {
           
 
 module.exports = {
-    createBeneficiario,
+    postBeneficiario,
     deleteBeneficiario, 
     updateBeneficiario
 } 

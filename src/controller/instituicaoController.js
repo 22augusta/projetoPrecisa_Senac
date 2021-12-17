@@ -1,4 +1,4 @@
-const instituicao = require("../models/instituicao")
+const instituicao = require("../models/instituicao.js")
 
 
 const getAllInstituicao = (req, res) => {
@@ -8,7 +8,7 @@ const getAllInstituicao = (req, res) => {
     })
   };
 
-const createInstituicao = (req, res) => {
+const postInstituicao = (req, res) => {
     console.log(req.body);
 
     let instituicao = new instituicao(req.body)
@@ -75,7 +75,7 @@ module.exports = {
     getAllInstituicao,
     getInstituicaoId,
     getInstituicaoBairro,
-    createInstituicao,
+    postInstituicao,
     deleteInstituicao, 
     updateInstituicao
 } 

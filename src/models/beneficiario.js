@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const beneficiarioSchema = new mongoose.Schema({
-    Id:{type: Number},
+    id:{type: Number},
     Nome:{type: String},
     Comunidade:{type: String},
     LocoMoradia:{type: String},

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const instituicaoSchema = new mongoose.Schema({
-        Id:{type: Number},
+        id:{type: Number},
         Nome:{type: String},
         CpfCnpj:{type: Number},
         Estado: {type: String},

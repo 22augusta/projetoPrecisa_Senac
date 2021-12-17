@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const doadorSchema = new mongoose.Schema({
-        Id: {type: Number},
+        id: {type: Number},
         Nome: {type: String},
         CpfCnpj: {type: Number},
         Telefone: {type: Number}

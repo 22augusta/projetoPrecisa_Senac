@@ -1,4 +1,4 @@
-const doador = require("../models/doador")
+const doador = require("../models/doador.js")
 
 
 const getAllDoador = (req, res) => {
@@ -8,7 +8,7 @@ const getAllDoador = (req, res) => {
     })
   };
 
-const createDoador = (req, res) => {
+const postDoador = (req, res) => {
     console.log(req.body);
 
     let doador = new doador(req.body)
@@ -61,7 +61,7 @@ const deleteDoador = (req, res) => {
 module.exports = {
     getAllDoador,
     getDoadorId,
-    createDoador,
+    postDoador,
     deleteDoador, 
     updateDoador
 } 

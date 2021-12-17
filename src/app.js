@@ -17,13 +17,13 @@ db.once("open", function (){
 })
 
 const index = require("./routes/index")
-const doador = require("./routes/doadorRoute")
-const instituicao = require("./routes/instituicaoRoute")
-const beneficiario = require("./routes/beneficiarioRoute")
+const doador = require("./routes/doadorRoute.js")
+const instituicao = require("./routes/instituicaoRoute.js")
+const beneficiario = require("./routes/beneficiarioRoute.js")
 
-app.use(bodyParser.json())
+app.use(express.json())
 
-app.use(function(req,res,next){
+app.use(function ( req,res,next ){
     res.header("Access-Control-Allow-Origin", "*")
     res.header(
         "Access-Control-Allow-Headers",
